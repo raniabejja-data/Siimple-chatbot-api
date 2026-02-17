@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Live Chat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="chat-card">
+
+    <div class="chat-header">
+        <div>
+            <h3>Let's chat ✨</h3>
+            <span>We're online</span>
+        </div>
+    </div>
+
+    <div id="chat-box">
+        <div class="bot-message">
+            Welcome! Ask me anything 😊
+        </div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type a message..." onkeypress="handleKey(event)">
+        <button onclick="sendMessage()">➤</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

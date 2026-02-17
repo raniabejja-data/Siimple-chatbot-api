@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #cfd9ff, #e2e2e2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 380px;
+    height: 600px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    background: #00ff5e;
+    border-radius: 50%;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.message-container {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.bot-container {
+    justify-content: flex-start;
+}
+
+.user-container {
+    justify-content: flex-end;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bot-container .avatar {
+    margin-right: 8px;
+}
+
+.user-container .avatar {
+    margin-left: 8px;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 70%;
+    font-size: 14px;
+}
+
+.bot {
+    background: #f1f1f1;
+}
+
+.user {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: right;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.chat-input button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
